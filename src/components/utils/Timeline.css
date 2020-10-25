@@ -1,0 +1,92 @@
+.timeline-wrapper {
+  background-color: #e7e5dc;
+  color: #8c6f56;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.timeline-body {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  margin-left: 100px;
+  border-radius: 0 8px 8px 0;
+}
+
+.timeline-body::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: #c49b75;
+  position: absolute;
+  left: -4px;
+  top: 0;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid #c49b75;
+  background-color: white;
+  position: absolute;
+  left: -16px;
+  top: 0px;
+  z-index: 9;
+}
+
+.time {
+  position: absolute;
+  left: -102px;
+  top: 4px;
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+.content {
+  margin: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px dashed #555555;
+}
+
+.title {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 374px) {
+  .timeline-body {
+    margin-left: 50px;
+  }
+
+  .time {
+    left: -100px;
+  }
+
+  .title {
+    font-weight: 200;
+    margin-bottom: 15px;
+  }
+
+  .study-location{
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+
+.button-css{
+  background: transparent;
+  color: #8C6F56;
+  font-size: 1.1em;
+  padding: 10px 10px;
+  border-radius: 2px;
+  border: 3px solid #8C6F56;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-css:hover{
+  background: #E7E5DC;
+}
+
+
+

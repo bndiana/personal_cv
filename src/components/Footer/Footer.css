@@ -1,0 +1,19 @@
+.footer-container {
+  background: #e7e5dc;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-credits {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #8c6f56;
+}
+
+.footer-text {
+  font-size: 8px;
+}

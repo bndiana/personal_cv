@@ -1,24 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import HomePage from "./components/pages/HomePage";
+import AboutPage from "./components/pages/AboutPage";
+import Skills from "./components/pages/Skills";
+import Work from "./components/pages/Work";
+import Contact from "./components/pages/Contact";
+import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <HomePage
+        title="Home"
+        dark={true}
+        id="home"
+      />
+      <AboutPage
+        title="About"
+        dark={false}
+        id="about"
+      />
+      <Skills
+        title="Skills"
+        dark={true}
+        id="skills"
+      />
+      <Work
+        title="Work"
+        dark={false}
+        id="work"
+      />
+      <Contact
+        title="Contact"
+        dark={true}
+        id="contact"
+      />
+      <Footer/>
     </div>
   );
 }
