@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact.css";
 import ContactForm from "../utils/ContactForm";
-import ScrollToTop from "../utils/ScrollToTop";
 import { IoMdPaperPlane } from "react-icons/io";
 import Particles from "react-particles-js";
 
@@ -88,14 +87,12 @@ export const Contact = () => {
           <div className="h-right">
             <div data-aos="fade-right" className="email-container">
               <h1>
-                {" "}
                 <i class="fas fa-envelope"></i> Email
               </h1>
               <h2>brihan.diana@yahoo.ro</h2>
             </div>
             <div data-aos="fade-right" className="telephone-container">
               <h1>
-                {" "}
                 <i class="fas fa-phone"></i> Phone
               </h1>
               <h2>+40 748635730</h2>
@@ -104,10 +101,8 @@ export const Contact = () => {
         </div>
       </div>
 
-        <ContactForm />
-      <div className="scroll-to-top">
-        <ScrollToTop />
-      </div>
+      <ContactForm />
+     
     </div>
   );
 };

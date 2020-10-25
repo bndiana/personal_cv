@@ -45,10 +45,6 @@
 .phone-container {
   margin: 20px;
 }
-.scroll-to-top {
-  position: absolute;
-  margin-left: 80%;
-}
 
 .tsparticles-canvas-el {
   position: absolute;
@@ -83,10 +79,6 @@
   .h-right {
     padding: 0;
   }
-
-  .contact-form {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 449px){
@@ -111,10 +103,6 @@
 
   .h-right {
     padding: 0;
-  }
-
-  .contact-form {
-    width: 100%;
   }
 
   h1{

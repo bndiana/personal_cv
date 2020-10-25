@@ -48,15 +48,6 @@
   justify-content: center;
   align-items: center;
 }
-/* 
-.contact-me-button {
-  align-self: flex-end;
-  /* float: left; */
-/* left: 0; */
-/* margin-left: 0px; */
-/* margin-right: 20%;
-  margin-top: 100%;
-}  */
 
 .home-icons {
   display: flex;
@@ -102,9 +93,6 @@
     font-size: 3em;
     margin-bottom: 10px;
     margin-top: 50px;
-  }
-
-  .media-items-home-page {
   }
 
   .home-icons {
@@ -157,7 +145,6 @@
     text-shadow: rgba(0, 0, 0, 20);
     margin-bottom: 30px;
     margin-top: 30px;
-    /* margin-left: 20%; */
   }
 
   .title2 {
@@ -165,7 +152,5 @@
     font-size: 3em;
     margin-bottom: 10px;
     margin-top: 50px;
-    /* margin-left: 20%;
-    margin-right: 20%; */
   }
 }

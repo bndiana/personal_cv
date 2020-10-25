@@ -1,5 +1,5 @@
 import React from "react";
-import "./ContactForm.css"
+import "./ContactForm.css";
 import emailjs from "emailjs-com";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
@@ -27,7 +27,6 @@ function ContactForm() {
   }
 
   return (
-  
     <form className="contact-form" onSubmit={sendEmail}>
       <TextField
         className="inputs"
@@ -65,7 +64,7 @@ function ContactForm() {
         variant="outlined"
       />
       <Button
-      className="submit-button"
+        className="submit-button"
         size="small"
         type="submit"
         value="Send"

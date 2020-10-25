@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./AboutPage.css";
-// import Typical from "react-typical";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Timeline from "../utils/Timeline";
@@ -51,7 +50,8 @@ export const AboutPage = () => {
       </div>
 
       <div className="about-me">
-        {/* <h1 className="hobbies">
+        {/*using typical npm
+         <h1 className="hobbies">
           My hobbies are{" "}
           <span className="hobbies-typical">
             {" "}
@@ -73,7 +73,6 @@ export const AboutPage = () => {
           </span>
         </h1> */}
         <div className="education">
-          {" "}
           <Timeline />
         </div>
         <div className="work-experience-wrapper">
@@ -86,7 +85,6 @@ export const AboutPage = () => {
               <p>| Feb 2020 - present</p>
               <br />
               <p>
-                {" "}
                 Broadening my knowledge about pharmaceutic products Quality
                 Control
               </p>
@@ -104,7 +102,9 @@ export const AboutPage = () => {
             </div>
           </div>
           <div className="work-resume">
-            <ButtonReuse className="button-resume" action={downloadResume}>Download Resume</ButtonReuse>
+            <ButtonReuse className="button-resume" action={downloadResume}>
+              Download Resume
+            </ButtonReuse>
           </div>
         </div>
       </div>

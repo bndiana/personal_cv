@@ -6,7 +6,6 @@ export default class Navbar extends Component {
   state = {
     clicked: false,
     setNavbar: false,
-    // menuRef: React.createRef(),
   };
 
   handleClick = () => {
@@ -15,6 +14,11 @@ export default class Navbar extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.changeBackground);
+    document.addEventListener("click", (e) => {
+      if (e.y > 380 && window.innerWidth <= 768) {
+        this.setState({ clicked: false });
+      }
+    });
   }
 
   componentWillUnmount() {
@@ -32,26 +36,13 @@ export default class Navbar extends Component {
     }
   };
 
-  //   handleClickOutside = (e) => {
-  //       if(this.menuRef.current.contains(e.target )){
-
-  //       }
-  //   };
-
-  //   componentWillMount() {
-  //     document.addEventListener("mousedown", this.handleClickOutside, false);
-  //   }
-  //   componentWillUnmount() {
-  //     document.addEventListener("mousedown", this.handleClickOutside, false);
-  //   }
-
   render() {
     const arrayOfTo = ["Home", "About", "Skills", "Work", "Contact"];
 
     return (
       <div
         className="navbar-container"
-        // {
+        // { to change navbar color using state 
         //   this.state.setNavbar ? "navbar-container active" : "navbar-container"
         // }
       >
@@ -77,7 +68,6 @@ export default class Navbar extends Component {
         </div>
 
         <div
-          //   ref={this.menuRef}
           className={this.state.clicked ? "nav-menu active" : "nav-menu"}
         >
           {arrayOfTo.map((item) => {

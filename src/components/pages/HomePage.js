@@ -1,7 +1,5 @@
 import React from "react";
 import "./HomePage.css";
-import ButtonReuse from "../utils/ButtonReuse";
-import { Link } from "react-scroll";
 
 export const HomePage = () => {
   return (

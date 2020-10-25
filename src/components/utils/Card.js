@@ -15,7 +15,6 @@ function Card(props) {
 
   return (
     <div className="card-container">
-      {/* <div data-aos="zoom-in" className="card"> */}
         <div className="card-photo">
           <img id="img" src={props.projectBackground} alt="alt" />
           <div
@@ -31,7 +30,6 @@ function Card(props) {
             </div>
           </div>
         </div>
-      {/* </div> */}
     </div>
   );
 }

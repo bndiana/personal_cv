@@ -33,22 +33,6 @@
   border-radius: 30px;
 }
 
-/* .image-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 10px;
-  transform: translate(-50%, -50%);
-  font-weight: 800;
-  font-size: 25px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  border: 5px solid #fff;
-  z-index: 10;
-  transition: top 0.5s ease !important;
-} */
-
 .img-overlay {
   position: absolute;
   top: 0;

@@ -18,7 +18,7 @@ export const Work = () => {
         projectBackground={comingSoon}
         projectTitle="New app"
         projectGitUrl="https://github.com/bndiana"
-        projectUrl="https://www.google.com"
+        projectUrl="https://github.com/bndiana"
       />
     </div>
   );
